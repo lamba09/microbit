@@ -1,8 +1,6 @@
-# Write your code here :-)
-
 from microbit import uart, button_b, display, Image
 
-uart.init(115200)
+uart.init(115200)  # serial baudrate
 
 RED = b'R'
 YELLOW = b'Y'
@@ -11,7 +9,7 @@ TRIGGER = b'T'
 CLEAR = b'C'
 UNKNOWN = b'U'
 
-dim_value = 4
+dim_value = 9  # value 1-9 for dimming the display
 
 NEUTRAL = Image('00000:09090:00000:99999:00000:')
 
